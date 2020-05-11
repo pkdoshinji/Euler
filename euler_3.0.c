@@ -6,7 +6,7 @@ void factor(long int n) {
 
   int largest = 1;
 
-  printf("Factors of %lu:\n", n);
+  printf("Factors of %lu:\n\n", n);
 
   while (n%2 == 0) {
     printf("  %d\n", 2);
@@ -22,7 +22,7 @@ void factor(long int n) {
     }
   }
 
-  if (n > 2) {
+  if (n > sqrt(n)) {
     printf("%d\n", n);
     }
 
