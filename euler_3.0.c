@@ -12,7 +12,7 @@ void factor(long int n) {
     printf("  %d\n", 2);
     n = n/2;
     largest = 2;
-    }
+  }
 
   for (int i = 3; i <= sqrt(n); i += 2) {
     while (n%i == 0) {
@@ -24,11 +24,11 @@ void factor(long int n) {
 
   if (n > sqrt(n)) {
     printf("%d\n", n);
-    }
+  }
 
   if (n > largest) {
     largest = n;
-    }
+  }
 
   printf("\nLargest factor: %d\n", largest);
 
